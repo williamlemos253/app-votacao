@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+ <div class="row text-center align-middle" style="min-height: 600px; align-content: center;">
+    <div class="col">
+       <h2>FICC: Feira de Iniciação Científica e Cultural</h2><br>
+        <h1>Voto: Simples Ação que Muda a Nação</h1><br>
+          {% buttons %}
+            <a href="/opcoes">
+                    <button type="submit" class="btn btn-success btn-lg">
+                  Iniciar
+                </button>
+            </a>
+
+          {% endbuttons %}
+    </div>
+ </div>
+
+{% endblock content %}
