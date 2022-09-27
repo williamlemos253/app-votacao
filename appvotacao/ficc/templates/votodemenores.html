@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+ <div class="row text-center align-middle" style="min-height: 600px; align-content: center;">
+     <div class="col-6">
+      <span style="background-color: #ffca40;" class="circulo"> 02 </span><br><br><br><br><br><br>
+    </div>
+    <div class="col-6">
+       <h1>Você escolheu:</h1><br>
+        <h2 style="color: red;">Voto De Menores</h2><br>
+          {% buttons %}
+            <a href="/opcoes">
+                    <button type="button" class="btn btn-success btn-lg">
+                  Confirmar
+                </button></a>
+                <a href="/opcoes">
+                  <button type="button" class="btn btn-danger btn-lg">
+                  Cancelar
+                </button>
+            </a>
+
+          {% endbuttons %}
+    </div>
+ </div>
+
+{% endblock content %}
