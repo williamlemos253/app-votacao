@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+<div class="row text-center align-middle" style="min-height: 600px; align-content: center;">
+    <div class="col-12">
+       <h1>Obrigado Pela Sua Participação</h1><br>
+        <h2>Agora é a sua vez de votar com consciência</h2><br>
+    </div>
+    <div class="col-6">
+        <a href="/aprovacao/aprovou"><img src="http://escolaexito.com.br/wp-content/uploads/2022/09/positivo.jpeg"></a>
+    </div>
+    <div class="col-6">
+        <a href="/aprovacao/naoaprovou"><img src="http://escolaexito.com.br/wp-content/uploads/2022/09/negativo.jpeg"></a>
+    </div>
+    <div class="col-12">
+        <br><br>
+        <h2>Você aprovou o nosso trabalho?</h2>
+    </div>
+ </div>
+
+{% endblock content %}

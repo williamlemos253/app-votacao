@@ -10,4 +10,6 @@ urlpatterns = [
     path('votodenegros', views.votodenegros),
     path('votobranconulo', views.votobranconulo),
     path('votodecabresto', views.votodecabresto),
+    path('aprovacao/<str:voto>', views.aprovacao),
+    path('dashboard', views.dashboard),
     ]
